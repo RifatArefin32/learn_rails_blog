@@ -1,1 +1,15 @@
-<h1>This is Index view</h1>
+<h1>This is index page</h1>
+
+
+<% @blog_posts.each do |blog_post| %>
+<div>
+    <h2> <%= blog_post.title %> </h2>
+    <h2> <%= blog_post.body %> </h2>
+    <strong> <%= link_to "See more-1", "blog_posts/#{blog_post.id}" %> </strong>
+    <strong> <%= link_to "See more-2", blog_post_path(blog_post.id) %> </strong>
+    <strong> <%= link_to "See more-3", blog_post %> </strong>
+    
+    
+</div>
+<br>
+<% end %>

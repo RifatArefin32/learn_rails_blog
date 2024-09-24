@@ -45,3 +45,4 @@ To test the **CRUD**, let's run `rails console` to enter into rails terminal and
     - create    `app/views/blog_posts/index.html.erb`
     - create    `test/controllers/blog_posts_controller_test.rb`
     - create    `app/helpers/blog_posts_helper.rb`
+- Write `blog_posts#index` method.

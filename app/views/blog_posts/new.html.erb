@@ -1,0 +1,27 @@
+<h1> This is new page </h1>
+
+<div>
+    <%= form_with model: @blog_post do |form| %>
+        <div>
+            <% if form.object.errors.any? %>
+                <% form.object.errors.full_messages.each do |error_message| %>
+                    <div> <%= error_message %> </div>
+                <% end %>
+            <% end %>
+        </div>
+
+        <div>
+            <%= form.label :title %>
+            <%= form.text_field :title %>
+        </div>
+        
+        <div>
+            <%= form.label :body %>
+            <%= form.text_area :body %>
+        </div>
+        
+        <div>
+            <%= form.button %>
+        </div>
+    <% end %>
+</div>

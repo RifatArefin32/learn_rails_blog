@@ -32,6 +32,7 @@ To test the **CRUD**, let's run `rails console` to enter into rails terminal and
 | `blog_post = BlogPost::find(1)` | Get the blog items with id `1` and store it in `blog_post` variable |
 | `blog_post.update(title:"Updated Title")` | Update and delete a blogpost object |
 | `blog_post.destroy()` | Remove the object from database |
+| `BlogPost::new` | Create a new instance of model `BlogPost` |
 
 
 # Create Route, Controller
